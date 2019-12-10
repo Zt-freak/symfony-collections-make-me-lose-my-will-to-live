@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New ChildClass{% endblock %}
+
+{% block body %}
+    <h1>Create new ChildClass</h1>
+
+    {{ include('child_class/_form.html.twig') }}
+
+    <a href="{{ path('child_class_index') }}">back to list</a>
+{% endblock %}
